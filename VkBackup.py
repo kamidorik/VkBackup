@@ -224,7 +224,7 @@ def main():
 		elif i == "SaveAllUserMessages":
 			SaveAllUserMessages(tools = tool, vk = vk, ignorelist = config.ignorelist)
 		else:
-			print("Комманды:\nSaveAllWall - Сохранить сообщения к пользователю\nSaveAllMessages - Сохранить всю стену определенного пользователя\nSaveAllUserMessages - Сохранить переписку")
+			print("Команды:\nSaveAllWall - Сохранить сообщения к пользователю\nSaveAllMessages - Сохранить всю стену определенного пользователя\nSaveAllUserMessages - Сохранить переписку")
 
 if __name__ == '__main__':
 	main()
