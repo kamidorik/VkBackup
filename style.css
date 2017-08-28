@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(237,238,240);
+  font-family: Tahoma, sans-serif;
+}
+li {
+  display: block;
+  background-color: white;
+  padding: 10px;
+}
+h1 {
+  font-size: 13px; 
+}
