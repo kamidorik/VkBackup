@@ -56,7 +56,7 @@ def SaveAllWall(owner_id = None, tools = None, vk = None, SaveImages = False, Sh
 				#проверка является ли id пабликом или человеком
 				if (ShowAvatar == True):
 					if item['from_id'] < 0:
-						GetUserId = vk.groups.getById(group_id = item['from_id'])
+						GetUserId = vk.groups.getById(group_id = str(item['from_id']).replace("-", ""))
 						UserId = a(GetUserId[0]['name'], href='https://vk.com/club'+str(item['from_id']).replace("-", ""))
 					else:
 						GetUserId = vk.users.get(user_ids = item['from_id'], fields = 'photo_50')
@@ -133,7 +133,7 @@ def SaveAllMessages(peer_id = None, tools = None, vk = None, SaveImages = False,
 				#проверка является ли id пабликом или человеком
 				if (ShowAvatar == True):
 					if item['from_id'] < 0:
-						GetUserId = vk.groups.getById(group_id = item['from_id'])
+						GetUserId = vk.groups.getById(group_id = str(item['from_id']).replace("-", ""))
 						UserId = a(GetUserId[0]['name'], href='https://vk.com/club'+str(item['from_id']).replace("-", ""))
 					else:
 						GetUserId = vk.users.get(user_ids = item['from_id'], fields = 'photo_50')
